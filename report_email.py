@@ -4,6 +4,7 @@ import os
 import reports
 import os.path
 import run
+import emails
 from datetime import datetime
 def get_product_list(path):
     feedback_list = []
@@ -22,3 +23,10 @@ if __name__ == "__main__":
     now = datetime.now() # current date and time
     report_title = 'Processed Update on {0}'.format(now.strftime("%b %d, %Y"))
     reports.generate_report("./tmp/processed.pdf",report_title,get_product_list("./supplier-data/descriptions"))
+    message=emails.generate_email("automation@example.com","username@example.com",
+                          "Upload Completed - Online Fruit Store",
+                          "All fruits are uploaded to our website successfully. A detailed list is attached to this email.",
+                          "./tmp/processed.pdf")
+    emails.send_email(message)
+    #to check the result open this link on browser:
+    #[linux-instance-external-IP]/webmail
