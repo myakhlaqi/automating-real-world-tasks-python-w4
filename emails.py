@@ -40,7 +40,6 @@ def generate_email(sender,recipient, subject,email_body,attachment_file):
             subtype=mime_subtype,
             filename=os.path.basename(attachment_file),
         )
-
         
     return message
 def send_email(message):
