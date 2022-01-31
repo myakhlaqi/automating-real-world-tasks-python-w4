@@ -8,6 +8,7 @@ import os
 # This example shows how a file can be uploaded using
 # The Python Requests module
 #35.226.214.171
+
 def get_image_paths(mypath):
     return [ os.path.abspath(os.path.join(mypath, f)) 
     for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f)) and f.endswith("jpeg")]
