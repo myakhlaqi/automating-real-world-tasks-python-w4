@@ -7,7 +7,6 @@ import requests
 def extract_feedback_object(logfile):
     product = {}
     file = open(logfile, "r")
-
     name, weight,description  = [line.strip() for line in file.readlines()]
     #print(title,name,date,feedback)
     product["name"] = name
