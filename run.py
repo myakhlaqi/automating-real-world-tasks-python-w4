@@ -36,6 +36,7 @@ def post_to_webservice(url, feedbacks):
         print("Submitted!")
     print("inside post:", response.status_code)
 
+    
 #print(extract_feedback("./020.txt"))
 #upload_product_description("./supplier-data/descriptions/","http://104.198.221.153/feedback/")
 
