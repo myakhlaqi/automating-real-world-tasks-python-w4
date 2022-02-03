@@ -22,6 +22,7 @@ def get_product_list(path):
     return feedback_list
 
 if __name__ == "__main__":
+
 #    today=datetime.strftime(datetime.today,"%b %d, %Y")
     now = datetime.now() # current date and time
     report_title = 'Processed Update on {0}'.format(now.strftime("%b %d, %Y"))
