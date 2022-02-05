@@ -8,6 +8,7 @@ FILENAME=$2
 COOKIE_FILE=$(mktemp cookiesXXXX.txt)
 
 # First get the confirmation prompt because the file is too big
+
 CONFIRM=$(wget --quiet --save-cookies ${COOKIE_FILE} --keep-session-cookies "https://docs.google.com/uc?export=download&id=${FILEID}" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')
 
 # Then download the file using the confirmation prompt
