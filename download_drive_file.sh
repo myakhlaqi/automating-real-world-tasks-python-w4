@@ -5,7 +5,6 @@ FILEID=$1
 FILENAME=$2
 
 # This script downloads the drive file with the given ID and saves it with the given name
-
 COOKIE_FILE=$(mktemp cookiesXXXX.txt)
 
 # First get the confirmation prompt because the file is too big
