@@ -3,6 +3,7 @@ import requests
 
 # This example shows how a file can be uploaded using
 # The Python Requests module
+
 #35.226.214.171
 url = "http://localhost/upload/"
 with open('/usr/share/apache2/icons/icon.sheet.png', 'rb') as opened:
