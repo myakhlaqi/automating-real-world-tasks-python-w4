@@ -8,5 +8,6 @@ import requests
 #35.226.214.171
 
 url = "http://localhost/upload/"
+
 with open('/usr/share/apache2/icons/icon.sheet.png', 'rb') as opened:
     r = requests.post(url, files={'file': opened})
