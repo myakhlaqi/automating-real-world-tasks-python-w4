@@ -34,4 +34,3 @@ if __name__ == "__main__":
     emails.send_email(message)
     #to check the result open this link on browser:
     #[linux-instance-external-IP]/webmail
-
