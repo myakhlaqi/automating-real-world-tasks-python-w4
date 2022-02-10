@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 from datetime import date, datetime
 import smtplib
 import os.path
