@@ -28,5 +28,4 @@ def generate_report(attachment, title, paragraph):
     report.build([report_title, body])
 
 
-
 #generate_report("./tmp/processed.pdf",report_title,)
