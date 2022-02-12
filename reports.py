@@ -15,7 +15,7 @@ def generate_report(attachment, title, paragraph):
 
     report = SimpleDocTemplate(attachment)
     styles = getSampleStyleSheet()
-   
+  
 
     report_title= Paragraph(title, styles["h1"])
     
