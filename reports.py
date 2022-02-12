@@ -12,7 +12,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate
 
 def generate_report(attachment, title, paragraph):
-
+ 
     report = SimpleDocTemplate(attachment)
     styles = getSampleStyleSheet()
  
