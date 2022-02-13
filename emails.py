@@ -4,7 +4,7 @@ from email.message import EmailMessage
 import getpass
 import mimetypes
 import os
-from re import sub
+
 import smtplib
 from reportlab.platypus import Paragraph, Spacer, Table, Image
 from reportlab.lib.styles import getSampleStyleSheet
