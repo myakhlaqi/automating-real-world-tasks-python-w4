@@ -44,7 +44,6 @@ def generate_email(sender,recipient, subject,email_body,attachment_file):
     return message
 
 def send_email(message):
-
     mail_server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
     mail_server.set_debuglevel(1)
 
