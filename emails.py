@@ -9,6 +9,7 @@ import smtplib
 from reportlab.platypus import Paragraph, Spacer, Table, Image
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate
+from re import sub
 
 def generate_email(sender,recipient, subject,email_body,attachment_file):
     message = EmailMessage()
