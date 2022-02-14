@@ -25,5 +25,5 @@ def generate_report(attachment, title, paragraph):
     #print(table_data)
 
     report.build([report_title, body])
-
+#generate_report("./tmp/processed.pdf",report_title,"text")
 
