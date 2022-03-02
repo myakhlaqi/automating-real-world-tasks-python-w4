@@ -16,7 +16,7 @@ def get_image_paths(mypath):
 
 url = "http://35.226.214.171/upload/"
 
-#with open('/usr/share/apache2/icons/icon.sheet.png', 'rb') as opened:
+with open('/usr/share/apache2/icons/icon.sheet.png', 'rb') as opened:
     #r = requests.post(url, files={'file': opened})
 
 def upload_image(image_list):
