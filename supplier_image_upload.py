@@ -26,3 +26,4 @@ def upload_image(image_list):
         print(r.text)
         
 upload_image(get_image_paths("./supplier-data/images"))
+ 
