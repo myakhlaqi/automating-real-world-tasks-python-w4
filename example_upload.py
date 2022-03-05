@@ -4,7 +4,7 @@ import requests
 # This example shows how a file can be uploaded using
 # The Python Requests module
 
-#35.226.214.171
+#35.226.214.xxx
 
 url = "http://localhost/upload/"
 
